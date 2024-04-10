@@ -1,0 +1,18 @@
+int main(PerfectNumberCheck) {
+  printf("Enter a number:\n"); // user input
+  int userinput;
+  int totalvalue = 0;
+  scanf("%d" , &userinput);
+
+  for (int i = userinput-1; i > 0; i--){ // loop, starts with userinput, checks for evenly divisible numbers from n-1 to 0, adds them
+  if (userinput % i == 0) {
+    (totalvalue = totalvalue + i);
+  }
+  }
+
+  if (totalvalue == userinput) { // compares all evenly divisble numbers' sum back to the original input
+    printf("%d number is a perfect number", userinput);
+  } else {
+      printf("%d number is not a perfect number" , userinput);
+    }
+}
