@@ -1,4 +1,6 @@
-int main(PerfectNumberCheck) {
+#include <stdio.h>
+
+int main(PerfectNumberChecker) {
   printf("Enter a number:\n"); // user input
   int userinput;
   int totalvalue = 0;
@@ -11,8 +13,9 @@ int main(PerfectNumberCheck) {
   }
 
   if (totalvalue == userinput) { // compares all evenly divisble numbers' sum back to the original input
-    printf("%d number is a perfect number", userinput);
+    printf("%d is a perfect number", userinput);
   } else {
-      printf("%d number is not a perfect number" , userinput);
+      printf("%d is not a perfect number" , userinput);
     }
+  return 0;
 }
